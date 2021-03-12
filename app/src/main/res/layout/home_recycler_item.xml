@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="8dp"
+    android:layout_marginHorizontal="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/home_recycler_text_date"
+        style="@style/DefaultTextViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height ="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="00일 월요일"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:elevation="15dp"
+        tools:targetApi="lollipop">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/home_recycler_img"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_alignParentBottom="true"
+                android:src="@color/black"/>
+
+            <TextView
+                android:id="@+id/home_recycler_text_content"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:padding="9dp"
+                android:layout_alignParentBottom="true"
+                android:layout_toRightOf="@+id/home_recycler_img"
+                android:maxLines="3"
+                android:ellipsize="end"
+                android:text="content"
+                style="@style/DefaultTextViewStyle"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

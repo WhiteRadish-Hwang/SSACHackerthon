@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <ImageView
+        android:id="@+id/upload_grid_recycler_img"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:layout_margin="1dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cal_thumbs_up"/>
+
+    <FrameLayout
+        android:id="@+id/upload_grid_recycler_transparent_layout"
+        android:layout_width="87dp"
+        android:layout_height="87dp"
+        android:background="@color/transparent_white"
+        android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <color name="colorAccent">#889dfe</color>
+
+
+    <!-- 기본 -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +12,11 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="transparent_white">#7FFFFFFF</color>
+    <color name="non">#00000000</color>
+    <color name="tag">#9B00E3</color>
+    <color name="under_tag">#999DA4</color>
+    <color name="button_gray">#AEB5BC</color>
+    <color name="emoji_background_color">#089B00E3</color>
+    <color name="tag_stroke">#D1D5DA</color>
 </resources>

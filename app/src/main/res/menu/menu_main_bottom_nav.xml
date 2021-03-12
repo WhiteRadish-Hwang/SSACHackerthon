@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_main_bottom_nav_home"
+        android:icon="@drawable/btm_home"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/main_bottom_nav_home_title" />
+
+    <item
+        android:id="@+id/menu_main_bottom_nav_upload"
+        android:icon="@drawable/btm_upload"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:title="@string/main_bottom_nav_upload_title" />
+
+    <item
+        android:id="@+id/menu_main_bottom_nav_feed"
+        android:icon="@drawable/btm_feed"
+        app:showAsAction="always"
+        android:enabled="true"
+        android:checkable="true"
+        android:title="@string/main_bottom_nav_feed_title" />
+
+</menu>

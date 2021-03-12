@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="week_day">
+        <item><b>S</b></item>
+        <item><b>M</b></item>
+        <item><b>T</b></item>
+        <item><b>W</b></item>
+        <item><b>T</b></item>
+        <item><b>F</b></item>
+        <item><b>S</b></item>
+    </string-array>
+</resources>

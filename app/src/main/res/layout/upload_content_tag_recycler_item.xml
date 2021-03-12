@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        style="@style/DefaultTextViewStyle"
+        android:id="@+id/upload_content_recycler_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginVertical="8dp"
+        android:paddingHorizontal="8dp"
+        android:background="@drawable/tag_border"
+        android:gravity="center"
+        android:text="@string/tag"
+        />
+
+
+</RelativeLayout>

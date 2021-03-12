@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/feed_recycler_vp"
+        android:layout_width="match_parent"
+        android:layout_height="360dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_alignBottom="@id/feed_recycler_vp">
+
+        <ImageView
+            android:id="@+id/feed_recycler_indicator_1"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginRight="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/feed_recycler_indicator_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/indicator_circle" />
+
+        <ImageView
+            android:id="@+id/feed_recycler_indicator_2"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/indicator_circle" />
+
+        <ImageView
+            android:id="@+id/feed_recycler_indicator_3"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginLeft="5dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/feed_recycler_indicator_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/indicator_circle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+        style="@style/DefaultTextViewStyle"
+        android:id="@+id/feed_recycler_text_content"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/feed_recycler_vp"
+        android:text="content"
+        />
+
+    <LinearLayout
+        android:id="@+id/feed_recycler_layout_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@id/feed_recycler_text_content">
+    <EditText
+        android:id="@+id/feed_recycler_edit_tag"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/non"
+        android:textSize="11sp"
+        android:textColor="@color/tag"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="16dp"
+        android:layout_below="@+id/feed_recycler_layout_tag">
+
+        <TextView
+            android:id="@+id/feed_recycler_text_date_ago"
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/under_tag"
+            android:text="0일 전"/>
+        <TextView
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/under_tag"
+            android:text="  |  "/>
+        <TextView
+            android:id="@+id/feed_recycler_text_repl_count"
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/under_tag"
+            android:text="댓글 15"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
